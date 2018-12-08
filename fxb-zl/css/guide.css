@@ -1,0 +1,264 @@
+				.main-box #bTabs_navTabsMainPage {
+	overflow-y: scroll;
+}
+
+.main-box .bgc {
+	height: 200px;
+	width: 100%;
+	background: url(../images/logo1.png) no-repeat center bottom;
+	background-size: cover;
+	position: relative;
+}
+
+.bgc .fl {
+	padding: 25px 34px;
+}
+
+.bgc .fl h2 {
+	margin: 0 0 10px 0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.bgc .fl p {
+	color: #fff;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+
+.bgc .fr {
+	position: absolute;
+	width: 310px;
+	height: 196px;
+	right: 0;
+	top: 4px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.bgc .fr .weather {
+	padding: 20px 34px;
+}
+
+.bgc .fr .weather .wea_img {
+	float: left;
+	margin-right: 40px;
+}
+
+.bgc .fr .weather .wea_num {
+	color: #fff;
+	margin-top: 30px;
+}
+
+.bgc .fr .weather .wea_num h4 {
+	font-size: 18px;
+}
+
+.bgc .fr .weather .wea_num p {
+	font-size: 18px;
+}
+
+.fr .address {
+	padding: 0 34px;
+	margin-top: 20px;
+	float: left;
+}
+
+.fr .address .ads_img {
+	float: left;
+	margin-right: 20px;
+}
+
+.fr .address .ads_name {
+	color: #fff;
+	font-size: 18px;
+	float: left;
+}
+
+.fr .dateTime {
+	float: left;
+	color: #fff;
+	margin: 20px 30px;
+	font-size: 18px;
+}
+
+.guiide_content {
+	padding: 50px;
+}
+
+.guiide_content .swiper-button-next {
+	background-image: url(../images/right-no.png)
+}
+
+.guiide_content .swiper-button-prev {
+	background-image: url(../images/left-no.png);
+}
+
+.guiide_content .swiper-button-next:hover {
+	background-image: url(../images/right-yes.png);
+}
+
+.guiide_content .swiper-button-prev:hover {
+	background-image: url(../images/left-yes.png);
+}
+
+
+/*常见问题*/
+
+#bTabs_navTba .bgc {
+	background: url(../images/logo2.png) no-repeat center bottom;
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+}
+
+.common_content .words_num {
+	margin: 20px 40%;
+}
+
+.common_content .words_num fieldset {
+	width: 270px;
+	border-top: 1px solid #eee;
+}
+
+.common_content .words_num legend {
+	border-bottom: none;
+	width: 54px;
+	text-align: center;
+}
+
+.common_content .words_content {
+	margin: 30px 20px;
+}
+
+.common_content .words_content .Q,
+.common_content .words_content .A {
+	margin: 0 0 20px 0;
+}
+
+
+/*tab_top*/
+
+.tab_top {
+	height: 60px;
+}
+
+.tab_top .tab_top_l {
+	height: 60px;
+	float: left;
+	margin-left: 30px;
+}
+.tab_top .tab_top_l ul{
+	margin-top: 10px;
+}
+
+.tab_top .tab_top_l .c_block {
+	float: left;
+	width: 130px;
+	height: 32px;
+	background: #2b3245;
+	color: #fff;
+	margin-right: 28px;
+	border-radius: 32px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer;
+}
+.tab_top .tab_top_l .c_block_g {
+	opacity: 0.7;
+}
+.tab_top .tab_top_l .searchbox{
+	float: left;
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+	margin-left: -20px;
+}
+.tab_top .tab_top_l .search{
+	width: 200px;
+	height: 40px;
+	border: 1px solid #d2d2d2;
+	box-sizing: border-box;
+	padding: 10px 0;
+	border-radius: 40px;
+	
+}
+.tab_top .tab_top_l .search img{
+	margin-left: 20px;
+}
+.searchbox input {
+	width: 138px;
+	border: none;
+	outline: none;
+}
+
+.tab_top .tab_top_l li img {
+	margin-right: 10px;
+}
+
+.tab_top .tab_top_r {
+	width: 320px;
+	height: 40px;
+	float: right;
+	margin-top: 10px;
+}
+
+.tab_top .tab_top_r li {
+	float: left;
+	width: 150px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	color: #74777c;
+	cursor: pointer;
+}
+
+.tab_top .tab_top_r li img {
+	margin-right: 10px;
+}
+
+@media (min-width: 800px) {
+	.guiide_content .swiper-slide img {
+		width: 450px;
+		margin-left: 30px;
+	}
+	@media (min-width: 1024px) {
+		.guiide_content .swiper-slide img {
+			width: 500px;
+			margin-left: 50px;
+		}
+		@media (min-width: 1100px) {
+			.guiide_content .swiper-slide img {
+				width: 560px;
+				margin-left: 80px;
+			}
+			@media (min-width: 1280px) {
+				.guiide_content .swiper-slide img {
+					width: 660px;
+					margin-left: 80px;
+				}
+				@media (min-width: 1366px) {
+					.guiide_content .swiper-slide img {
+						width: 660px;
+						margin-left: 100px;
+					}
+				}
+				@media (min-width: 1440px) {
+					.guiide_content .swiper-slide img {
+						width: 760px;
+						margin-left: 100px;
+					}
+				}
+				@media (min-width: 1680px) {
+					.guiide_content .swiper-slide img {
+						width: 860px;
+						margin-left: 120px;
+					}
+				}
+				@media (min-width: 1920px) {
+					.guiide_content .swiper-slide img {
+						width: 1000px;
+						margin-left: 150px;
+					}
+				}

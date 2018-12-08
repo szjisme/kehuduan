@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<!--<script src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.4.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.4.6.0.css">
+		<link rel="stylesheet" href="css/b.tabs.css" type="text/css">
+		<link rel="stylesheet" href="css/guide.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css" />
+		<style type="text/css">
+			div.menuSideBar {}
+			
+			div.menuSideBar li.nav-header {
+				font-size: 14px;
+				padding: 3px 15px;
+			}
+			
+			div.menuSideBar .nav-list>li>a,
+			div.menuSideBar .dropdown-menu li a {
+				-webkit-border-radius: 0px;
+				-moz-border-radius: 0px;
+				-ms-border-radius: 0px;
+				border-radius: 0px;
+			}
+			
+			
+				transform: translate(-50%,-50%);
+				-ms-transform:translate(-50%,-50%); 	/* IE 9 */
+				-moz-transform:translate(-50%,-50%); 	/* Firefox */
+				-webkit-transform:translate(-50%,-50%); /* Safari 和 Chrome */
+				-o-transform:translate(-50%,-50%); 	
+}
+		</style>
+	</head>
+
+	<body>
+		<div class="head">
+			<div class="head-left">
+				<h3><img src="images/logo.png" />风向标自媒体</h3>
+				<!--<div class="shousuo" style="float: left;cursor: pointer;">
+				<img src="images/shousuo.png" alt="" />
+			</div>-->
+
+			</div>
+
+			<div class="head-right">
+				<ul>
+					<li class="head-logo"><img src="//inews.gtimg.com/newsapp_ls/0/1942940500_200200/0" /></li>
+					<li class="hello">您好，<span>穆青</span></li>
+					<li class="shezhi"><img src="images/shezhi.png" /></li>
+					<li class="out"><img src="images/out.png" /></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="top" style="height: 60px;margin-top: 80px;">
+			<div class="tab_top">
+				<div class="tab_top_l">
+					<ul>
+						<li class="searchbox">
+							<div class="search">
+								<img src="images/search.png" alt="" />
+								<img class="close" src="images/close.png">
+								<input type="text" placeholder="请输入要搜索的账号" />
+							</div>
+						</li>
+						<li class="c_block" style="margin-left: 30px;">
+							<div>
+								<img src="images/shaixuan.png" alt="" /> 已登录账号
+							</div>
+						</li>
+						<li class="c_block c_block_g">
+							<img src="images/shaixuan.png" alt="" /> 登录失效账号
+						</li>
+					</ul>
+				</div>
+				<div class="tab_top_r">
+					<ul>
+						<li style="border-right: 1px solid #ccc;">
+							<img src="images/xinbiao.png" alt="" /> 新手引导
+						</li>
+						<li>
+							<img src="images/zhinan.png" alt="" /> 常见问题
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<!--右侧悬浮检测-->
+			<div class="testbtn"></div>
+			<div class="aside-left">
+				<div class="aside-left_l">
+					<ul id="menuSideBar" class="platform-list">
+						<li mid="tab1" funurl="http://www.baidu.com" class="active">
+							<img data-link='images/bai-no.png' data-newlink='images/bai-yes.png' src="images/bai-no.png" alt="" />
+							<span style="display: none;">百家号</span>
+						</li>
+						<li mid="tab2" funurl="https://www.toutiao.com/a6597012666156319236/">
+							<img data-link='images/dayu-no.png' data-newlink='images/dayu-yes.png' src="images/dayu-no.png" />
+							<span style="display: none;">大鱼号</span>
+						</li>
+						<li mid="tab3" funurl="https://www.toutiao.com/a6597012666156319236/">
+							<img data-link='images/kuai-no.png' data-newlink='images/kuai-yes.png' src="images/kuai-no.png" />
+							<span style="display: none;">快传号</span>
+						</li>
+						<li mid="tab4" funurl="https://www.toutiao.com/a6597895462315885064">
+							<img data-link='images/qkan-no.png' data-newlink='images/qkan-yes.png' src="images/qkan-no.png" />
+							<span style="display: none;">QQ看点</span></span>
+						</li>
+						<li mid="tab5" funurl="https://www.toutiao.com/a6580544451028976135/">
+							<img data-link='images/qu-no.png' data-newlink='images/qu-yes.png' src="images/qu-no.png" />
+							<span style="display: none;">趣头条</span>
+						</li>
+						<li mid="tab6" funurl="https://www.toutiao.com/a6597344233416294920/">
+							<img data-link='images/toutiao-no.png' data-newlink='images/toutiao-yes.png' src="images/toutiao-no.png" />
+							<span style="display: none;">头条号</span>
+						</li>
+						<li mid="tab7" funurl="https://www.toutiao.com/a6597595159993516557/">
+							<img data-link='images/yidian-no.png' data-newlink='images/yidian-yes.png' src="images/yidian-no.png" />
+							<span style="display: none;">一点号</span>
+						</li>
+						<li mid="tab8" funurl="https://www.toutiao.com/a6584682089638003204/">
+							<img data-link='images/qe-no.png' data-newlink='images/qe-yes.png' src="images/qe-no.png" />
+							<span style="display: none;">企鹅号</span>
+						</li>
+					</ul>
+				</div>
+				<div class="aside-left_r">
+					<div class="aside-left_r_t">
+						<div class="name">百家号</div>
+						<div class="num ">5000
+
+						</div>
+					</div>
+					<div class="aside_left_r_list" id="#sidebar">
+						<ul id="list1" class="aside_left_r_list_ul draglist" data-groupid="gid-1">
+							<li data-id="1" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情事情事情事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="2" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="3" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="4" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="5" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="6" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="7" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="8" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="9" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="10" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="11" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="12" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="13" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="14" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="15" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="16" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">最后一个li</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="pagebox">
+							<div class="toleft"></div>
+							<div class="page">
+								<input type="text" value="1" /><span class="mood">/</span><span>24</span>
+							</div>
+
+							<div class="toright"></div>
+						</div>
+						<div id="" class="retract">
+							<img class="retract-img" src="images/t-right.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="mainFrameTabs" class="aside-right">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#bTabs_navTabsMainPage" data-toggle="tab">新手指引</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#bTabs_navTba" data-toggle="tab">常见问题</a>
+					</li>
+				</ul>
+				<div class="addr">
+					<a onclick="javascript:document.getElementById('copyLink').select();document.execCommand('copy')" id="fuzhi_box">
+						<img class="fuzhi" src="images/fuzhi.png" alt="" />
+					</a>
+					<input type="text" name="" id="copyLink" readonly="readonly" value="https://www.fxb-team.com/site/index" onclick="javascript:document.getElementById('copyLink').select();document.execCommand('copy')" />
+				</div>
+				<!--=======主体div 用于放置内容=======-->
+				<div class="main-box tab-content">
+
+					<!--地址复制-->
+					<!--<div class="addr">
+							<a onclick="javascript:document.getElementById('copyLink').select();document.execCommand('copy')" id="fuzhi_box">
+								<img class="fuzhi" src="images/fuzhi.png" alt="" />
+							</a>
+							<input type="text" name="" id="copyLink" readonly="readonly" value="https://www.fxb-team.com/site/index" onclick="javascript:document.getElementById('copyLink').select();document.execCommand('copy')"/>
+						</div>-->
+
+					<div class="tab-pane active" id="bTabs_navTabsMainPage">
+
+						<div class="bgc">
+							<div class="fl">
+								<h2>新手引导</h2>
+								<p>Novice guidance</p>
+							</div>
+							<div class="fr">
+								<div class="weather">
+
+									<iframe id="fancybox-frame" width="240px" height="90px" name="fancybox-frame1536901449041" frameborder="0" scrolling="no" hspace="0" src="http://i.tianqi.com/index.php?c=code&a=getcode&id=8&color=%23FFFFFF&h=80&w=230&site=18"></iframe>
+
+								</div>
+								<div class="address">
+									<div class="ads_img" <img src="images/address.png" alt="" />
+								</div>
+							</div>
+							<div class="dateTime">
+								<div class="mon">sep&nbsp;</div>
+								<div class="day">10,</div>
+								<div class="year"></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="guiide_content">
+
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="images/01.png" /></div>
+								<div class="swiper-slide"><img src="images/02.png" /></div>
+								<div class="swiper-slide"><img src="images/03.png" /></div>
+								<div class="swiper-slide"><img src="images/04.png" /></div>
+							</div>
+
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane active" id="bTabs_navTba">
+					<div class="bgc">
+						<div class="fl">
+							<h2>常见问题</h2>
+							<p>Common FAQ</p>
+						</div>
+						<div class="fr">
+							<div class="weather">
+								<iframe allowtransparency="true" frameborder="0" width="195" height="96" scrolling="no" src="//tianqi.eastday.com/plugin/widget_v1.html?sc=2&z=1&t=0&v=0&d=1&bd=0&k=&f=ffffff&q=1&a=1&c=54511&w=240&h=96&align=center"></iframe>
+								<!--<iframe allowtransparency="true" frameborder="0" width="255" height="98" scrolling="no" src="//tianqi.eastday.com/plugin/widget_v1.html?sc=2&z=3&t=1&v=0&d=1&bd=0&k=&f=&q=1&a=1&c=54511&w=255&h=98&align=center"></iframe>-->
+
+							</div>
+							<div class="address">
+							</div>
+							<div class="dateTime">
+								<div class="mon"></div>
+								<div class="day"></div>
+								<div class="year"></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="common_content">
+						<div class="words">
+							<div class="words_num">
+								<fieldset>
+									<legend><span style="font-size: 14px;color: #d3d3d3;">No.1</span></legend>
+
+								</fieldset>
+							</div>
+							<div class="words_content">
+								<div class="Q">
+
+									<ul>
+										<li style="float: left;margin-right: 30px;"><img src="images/Q.png" alt="" /></li>
+
+										<li>
+											<h3>如何安装更新小火花客户端？</h3>
+										</li>
+									</ul>
+
+								</div>
+								<div class="A">
+									<ul>
+										<li style="float: left;margin-right: 30px;"><img src="images/A.png" /></li>
+										<li>打开小火花助手官网（https://zs.xhh.com/）在首页下载小火花助手客户端并安装。win10操作系统，需要关闭系统杀毒软件（迈克菲）以及 Windows Defender。</li>
+										<li>小火花客户端程序目前会自动更新，但是win10操作系统需要手动更新，自动更新会失败。</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--========加载中div================-->
+			<div class="loading">
+					<img src="images/loading.gif" />
+				</div>
+		</div>
+		</div>
+		<div class="shadow">
+			<!--风向标温馨提示-->
+			<div class="fxb-shadow">
+				<h3>风向标温馨提示 <img class="close-btn" src="images/close2.png" /></h3>
+				<div class="cont-shadow">
+					<p>亲爱的小编阁下，确认发布文章吗？</p>
+					<p>您可以选择检测一下，避免发布违规文章~</p>
+				</div>
+				<div class="btn-box">
+					<span class="confirm">确认发布</span>
+					<span class="testing">检测一下</span>
+				</div>
+			</div>
+			<div class="test-box">
+				<!--检测结果成功前-->
+				<!--<div class="test-before">
+					<img src="images/loading2.gif" />
+				</div>-->
+				<!--检测结果成功后-->
+				<div class="test-sucess">
+					<h3>检测结果 <img class="close-btn" src="images/close2.png" /></h3>
+					<div class="tit">
+						<ul>
+							<li>图像检测</li>
+							<li>文本检测</li>
+						</ul>
+					</div>
+					<div class="scrollbox">
+						<div class="scrollcont">
+							<ul class="text-test test">
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">暴恐识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">恶心识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li class="below">
+									<span class="title">二维码识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<span>色情</span>,<span>辱骂</span>,<span>色情</span>,<span>辱骂辱骂辱骂辱骂</span>
+									</div>
+								</li>
+								<li class="below">
+									<span class="title">二维码识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<span>色情</span>,<span>辱骂</span>,<span>色情</span>,<span>辱骂</span>
+									</div>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li class="below">
+									<span class="title">水印码识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="images/01.png" /></div>
+												<div class="swiper-slide"><img src="images/02.png" /></div>
+												<div class="swiper-slide"><img src="images/03.png" /></div>
+												<div class="swiper-slide"><img src="images/04.png" /></div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="pic-test test">
+								<li class="below">
+									<span class="title">暴恐违禁</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="images/01.png" /></div>
+												<div class="swiper-slide"><img src="images/02.png" /></div>
+												<div class="swiper-slide"><img src="images/03.png" /></div>
+												<div class="swiper-slide"><img src="images/04.png" /></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="title">文本色情</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">政治敏感</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">恶意推广</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">低俗辱骂</span><span class="result">通过</span>
+								</li>
+								<li class="below">
+									<span class="title">色情识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="images/01.png" /></div>
+												<div class="swiper-slide"><img src="images/02.png" /></div>
+												<div class="swiper-slide"><img src="images/03.png" /></div>
+												<div class="swiper-slide"><img src="images/04.png" /></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li>
+									<span class="title">色情识别</span><span class="result">通过</span>
+								</li>
+								<li class="below">
+									<span class="title">色情识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="images/01.png" /></div>
+												<div class="swiper-slide"><img src="images/02.png" /></div>
+												<div class="swiper-slide"><img src="images/03.png" /></div>
+												<div class="swiper-slide"><img src="images/04.png" /></div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="below">
+									<span class="title">色情识别</span><span class="result active">不通过</span>
+									<div class="pic-swiper">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="images/01.png" /></div>
+												<div class="swiper-slide"><img src="images/02.png" /></div>
+												<div class="swiper-slide"><img src="images/03.png" /></div>
+												<div class="swiper-slide"><img src="images/04.png" /></div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tit2">
+						<ul>
+							<li>标签检测 <span>(以下百分数为置信度)</span></li>
+						</ul>
+					</div>
+					<div class="tab-box">
+						<div class="tab-cont">
+							<div class="tablist"><span>百度</span><span>93.17%</span></div>
+							<div class="tablist"><span>人工智能</span><span>93.17%</span></div>
+							<div class="tablist"><span>百度</span><span>93.17%</span></div>
+							<div class="tablist"><span>百度</span><span>93.17%</span></div>
+							<div class="tablist"><span>百度</span><span>93.17%</span></div>
+						</div>
+					</div>
+					<div class="btn-box mybtn">
+						<span class="confirm">确认发布</span>
+						<span class="testing"><a href="">修改文章</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="js/bootstrap-3.3.4.js"></script>
+		<script type="text/javascript" src="js/b.tabs.js"></script>
+		<script type="text/javascript" src="js/mytab.js"></script>
+		<script type="text/javascript" src="dist/js/swiper.min.js"></script>
+		<script src="./jquery.dragsort-0.5.2.min.js"></script>
+
+	</body>
+
+	<!--轮播图-->
+	<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true,
+
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			autoplay: true,
+
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			observer:true,//修改swiper自己或子元素时，自动初始化swiper
+
+  observeParents:true//修改swiper的父元素时，自动初始化swiper
+		})
+	</script>
+	<!--获取日期-->
+	<script type="text/javascript">
+		$(function() {
+			var date = new Date();
+			var year = date.getFullYear();
+			var Mon = date.toDateString().split(" ")[1];
+			var day = date.getDate()
+			$('.year').text(year);
+			$('.mon').text(Mon + ',');
+			$('.day').text(day + ',')
+
+		})
+	</script>
+	<script>
+		var frm = document.getElementById("fancybox-frame");
+
+		$(frm).load(function() { //等加载完毕 
+
+			$(this).find(".wtname").remove();
+		});
+	</script>
+
+	<!-- 根据字数改变红圈还是椭圆 -->
+	<script>
+		$(function() {
+			var Num = $('.num').text();
+			// console.log(Num)
+			if(Num <= 99 && Num >= 0) {
+				$('.num').removeClass('num').addClass('num_cir');
+			}
+		})
+	</script>
+
+	<!--拖拽-->
+
+	<script type="text/javascript">
+		$(".draglist").dragsort({
+			dragSelector: "li",
+			dragBetween: true,
+			placeHolderTemplate: "<li class='placeHolder'><div></div></li>"
+		});
+		$('.draglist li').click(function() {
+			console.log(1)
+		})
+	</script>
+
+	<!--左侧收起收起-->
+	<script type="text/javascript">
+		$(function() {
+			$('.retract').click(function() {
+
+				console.log(this)
+				var aside = $('.aside-left')[0];
+				var rimg = $('.retract-img')[0];
+				console.log(rimg)
+				console.log($('.aside-left'))
+				console.log($('.loading img'))
+				//			console.log(aside)
+				if(aside.offsetLeft == 0) {
+					$('.aside-left').css('margin-left', -218);
+					$('.retract').css('margin-left', -218);
+					rimg.setAttribute("src", "images/t-left.png");
+					$('.addr').css('margin-left',0);
+					$('.loading img').css('margin-left',25)
+				} else {
+					$('.aside-left').css('margin-left', 0);
+					$('.retract').css('margin-left', 0);
+					rimg.setAttribute("src", "images/t-right.png");
+						$('.addr').css('margin-left',218);
+						$('.loading img').css('margin-left',84)
+					
+				}
+				//适配图片居中
+				for(let index = 0; index < 20; index++) {
+
+					setTimeout(function() {
+						mySwiper.update();
+					}, 25 * index)
+				}
+
+				setTimeout(function() {
+					mySwiper.update();
+				}, 1000)
+			})
+		})
+	</script>
+
+</html>

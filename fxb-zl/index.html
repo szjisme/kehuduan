@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.4.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.4.6.0.css">
+		<link rel="stylesheet" href="css/b.tabs.css" type="text/css">
+		<link rel="stylesheet" href="css/guide.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css" />
+
+		
+		<style type="text/css">
+		div.menuSideBar { }
+		div.menuSideBar li.nav-header { font-size: 14px; padding: 3px 15px; }
+		div.menuSideBar .nav-list > li > a, div.menuSideBar .dropdown-menu li a { -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; border-radius: 0px; }
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head-left">
+					<h3><img src="images/logo.png"/>风向标自媒体</h3>
+			<!--<div class="shousuo" style="float: left;cursor: pointer;">
+				<img src="images/shousuo.png" alt="" />
+			</div>-->
+				
+			</div>
+			
+			<div class="head-right">
+				<ul>
+					<li class="head-logo"><img src="//inews.gtimg.com/newsapp_ls/0/1942940500_200200/0" /></li>
+					<li class="hello">您好，<span>穆青</span></li>
+					<li class="shezhi"><img src="images/shezhi.png"/></li>
+					<li class="out"><img src="images/out.png"/></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="top" style="height: 60px;margin-top: 80px;">
+				<div class="tab_top">
+					<div class="tab_top_l">
+						<ul>
+							<li class="searchbox">
+								<div class="search">
+									<img src="images/search.png" alt="" />
+									<input type="text" placeholder="请输入要搜索的账号" />
+								</div>
+							</li>
+							<li class="c_block" style="margin-left: 30px;">
+								<div>
+									<img src="images/shaixuan.png" alt="" />
+									已登录账号
+								</div>
+							</li>
+							<li class="c_block c_block_g">
+								<img src="images/shaixuan.png" alt="" />
+								登录失效账号
+							</li>
+						</ul>
+					</div>
+					<div class="tab_top_r">
+						<ul>
+							<li style="border-right: 1px solid #ccc;">
+								<img src="images/xinbiao.png" alt="" />
+								新手引导
+							</li>
+							<li>
+								<img src="images/zhinan.png" alt="" />
+								常见问题
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		
+		<div class="main">
+			<div class="aside-left">
+				<div class="aside-left_l">
+					<ul id="menuSideBar" class="platform-list">
+						<li mid="tab1" funurl="http://www.baidu.com" class="active">
+							<img data-link='images/bai-no.png' data-newlink='images/bai-yes.png' src="images/bai-no.png"alt="" />
+							<span style="display: none;">百家号</span>
+						</li>
+						<li mid="tab2" funurl="https://www.toutiao.com/a6597012666156319236/">
+							<img data-link='images/dayu-no.png' data-newlink='images/dayu-yes.png' src="images/dayu-no.png" />
+							<span style="display: none;">大鱼号</span>
+						</li>
+						<li mid="tab3" funurl="https://www.toutiao.com/a6597012666156319236/">
+							<img data-link='images/kuai-no.png' data-newlink='images/kuai-yes.png' src="images/kuai-no.png" />
+							<span style="display: none;">快传号</span>
+						</li>
+						<li mid="tab4" funurl="https://www.toutiao.com/a6597895462315885064">
+							<img data-link='images/qkan-no.png' data-newlink='images/qkan-yes.png' src="images/qkan-no.png" />
+							<span style="display: none;">QQ看点</span></span>
+						</li>
+						<li mid="tab5" funurl="https://www.toutiao.com/a6580544451028976135/">
+							<img data-link='images/qu-no.png' data-newlink='images/qu-yes.png' src="images/qu-no.png" />
+							<span style="display: none;">趣头条</span>
+						</li>
+						<li mid="tab6" funurl="https://www.toutiao.com/a6597344233416294920/">
+							<img data-link='images/toutiao-no.png' data-newlink='images/toutiao-yes.png' src="images/toutiao-no.png" />
+							<span style="display: none;">头条号</span>
+						</li>
+						<li mid="tab7" funurl="https://www.toutiao.com/a6597595159993516557/">
+							<img data-link='images/yidian-no.png' data-newlink='images/yidian-yes.png' src="images/yidian-no.png" />
+							<span style="display: none;">一点号</span>
+						</li>
+						<li mid="tab8" funurl="https://www.toutiao.com/a6584682089638003204/">
+							<img data-link='images/qe-no.png' data-newlink='images/qe-yes.png' src="images/qe-no.png" />
+							<span style="display: none;">企鹅号</span>
+						</li>
+					</ul>
+				</div>
+				<div class="aside-left_r">
+					<div class="aside-left_r_t">
+						<div class="name">百家号</div>
+						<div class="num">5000
+							
+						</div>
+					</div>
+					<div class="aside_left_r_list" id="#sidebar">
+						<ul id="list1" class="draglist" data-groupid="gid-1">
+							<li data-id="1" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">这是第一个1111</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="2" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="3" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="4" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="5" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="6" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="7" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="8" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="9" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="10" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="11" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="12" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="13" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="14" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="15" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="16" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_green"></div>
+								</div>
+							</li>
+							<li data-id="17" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+							<li data-id="18" data-groupid="gid-1">
+								<div class="pic">
+									<img src="http://t.cn/RCzsdCq" alt="" />
+									<div class="user_name">你不知道的事情</div>
+								</div>
+								<div class="cir_lit">
+									<div class="cir_lit_child c_red"></div>
+								</div>
+							</li>
+						
+				
+						</ul>
+						
+						<div class="pagebox">
+							
+							<div class="toleft"></div>
+							<div class="page">
+								<input type="text" value="1" /><span class="mood">/</span><span>24</span>
+							</div>
+							
+							<div class="toright"></div>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div id="mainFrameTabs" class="aside-right">
+				<!-- Nav tabs -->
+			    <ul class="nav nav-tabs" role="tablist">
+			      <li role="presentation" class="active"><a href="#bTabs_navTabsMainPage" data-toggle="tab">新手指引</a></li>
+			      <li role="presentation" class=""><a href="#bTabs_navTba" data-toggle="tab">常见问题</a></li>
+			    </ul>
+				<!--=======主体div 用于放置内容=======-->
+				<div class="main-box tab-content">
+					 <div class="tab-pane active" id="bTabs_navTabsMainPage">
+						<div class="bgc">
+							<div class="fl">
+								<h2>新手引导</h2>
+								<p>Novice guidance</p>
+							</div>
+							<div class="fr">
+								<div class="weather">
+									<div class="wea_img">
+										<img src="images/weather.png" alt="" />
+									</div>
+									<div class="wea_num">
+										<h4>晴转多云</h4>
+										<p>16℃ -29℃</p>
+									</div>
+								</div>
+								<div class="address">
+									<div class="ads_img">
+										<img src="images/address.png" alt="" />
+									</div>
+									<div class="ads_name">滨州</div>
+								</div>
+								<div class="dateTime">Sep 10,2018</div>
+							</div>
+							
+						</div>
+						<div class="guiide_content">
+							
+							<div class="swiper-container">
+							    <div class="swiper-wrapper">
+							        <div class="swiper-slide"><img src="images/01.png"/></div>
+							        <div class="swiper-slide"><img src="images/02.png"/></div>
+							        <div class="swiper-slide"><img src="images/03.png"/></div>
+							        <div class="swiper-slide"><img src="images/04.png"/></div>
+							    </div>
+							    
+							    <div class="swiper-button-prev"></div>
+							    <div class="swiper-button-next"></div>
+							
+							</div>
+						</div>
+					</div>
+					
+					<div class="tab-pane active" id="bTabs_navTba">
+						<div class="bgc">
+							<div class="fl">
+								<h2>常见问题</h2>
+								<p>Common FAQ</p>
+							</div>
+							<div class="fr">
+								<div class="weather">
+									<div class="wea_img">
+										<img src="images/weather.png" alt="" />
+									</div>
+									<div class="wea_num">
+										<h4>晴转多云</h4>
+										<p>16℃ -29℃</p>
+									</div>
+								</div>
+								<div class="address">
+									<div class="ads_img">
+										<img src="images/address.png" alt="" />
+									</div>
+									<div class="ads_name">滨州</div>
+								</div>
+								<div class="dateTime">Sep 10,2018</div>
+							</div>
+							
+						</div>
+						<div class="common_content">
+							<div class="words">	
+								<div class="words_num">
+										<fieldset>
+			                    <legend><span style="font-size: 14px;color: #d3d3d3;">No.1</span></legend>
+			
+			                </fieldset>	
+								</div>
+								<div class="words_content">
+									<div class="Q">
+										
+										<ul>
+											<li style="float: left;margin-right: 30px;"><img src="images/Q.png" alt="" /></li>
+										
+										<li><h3>如何安装更新小火花客户端？</h3></li>
+										</ul>
+										
+										
+									</div>
+									<div class="A">
+										<ul>
+											<li style="float: left;margin-right: 30px;"><img src="images/A.png"/></li>
+											<li>打开小火花助手官网（https://zs.xhh.com/）在首页下载小火花助手客户端并安装。win10操作系统，需要关闭系统杀毒软件（迈克菲）以及 Windows Defender。</li>
+											<li>小火花客户端程序目前会自动更新，但是win10操作系统需要手动更新，自动更新会失败。</li>
+										</ul>
+									</div>
+									
+								</div>
+								
+							</div>								
+						</div>
+					</div>
+				</div>
+				
+				<!--========加载中div================-->
+				<!--<div class="loading">
+					<img src="images/loading.gif" />
+				</div>-->
+			</div>
+		</div>
+		<script src="js/bootstrap-3.3.4.js"></script> 
+		<script type="text/javascript" src="js/b.tabs.js" ></script> 
+		<script type="text/javascript" src="js/mytab.js" ></script>
+		<script type="text/javascript" src="dist/js/swiper.min.js"></script>
+		<script src="jquery.dragsort-0.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+	
+	<!--轮播图-->
+	<script type="text/javascript">
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    loop: true,
+		    
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+		     autoplay:true,
+		    
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		 
+		  }) 
+	</script>
+	
+	<script type="text/javascript">
+		$(function(){
+//			$('.shousuo').click(function(){
+//				console.log(1)
+//				if($('.aside-left_r').width()>0){
+//					$('.aside_left_r_list>ul').css('display','none')
+//					$('.aside-left .aside-left_r_t').css('display','none')
+//					$('.pagebox').css('display','none')
+//					$('.aside-left_r').css('width',0);
+//					$('#mainFrameTabs').css('width','96%')
+//					$('#mainFrameTabs').css('margin-left','60px')
+//					
+//				}else{
+//					$('.aside-left_r').css('width',180);
+//					$('#mainFrameTabs').css('width','88%')
+//					$('#mainFrameTabs').css('margin-left','240px')
+//					$('.aside_left_r_list>ul').css('display','block')
+//					$('.aside-left .aside-left_r_t').css('display','block')
+//					$('.pagebox').css('display','block')
+//				}
+//			})
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			function myContent(){
+				var winW = $(window).width()-240;
+				var winH = $(window).height()-80;
+				var w = winW+'px';
+				var h = winH+'px';
+				$(".aside-right").css("width", w);
+				$(".aside-right").css("height", h);
+			};
+			myContent();
+			$(window).resize(function(){
+				myContent();
+			});	
+			
+			
+		})
+
+	</script>
+
+	<!-- 根据字数改变红圈还是椭圆 -->
+	<script>
+		$(function(){
+			var Num = $('.num').text();
+			// console.log(Num)
+			if(Num <= 99 && Num >= 0){	
+				$('.num').removeClass('num').addClass('num_cir');
+			}
+		})
+	</script>
+
+	<!--拖拽-->
+	<script type="text/javascript">
+	$(".draglist").dragsort({
+		dragSelector: "li",
+		dragBetween: true,
+		dragEnd: saveOrder, 
+		placeHolderTemplate: "<li class='placeHolder'><div></div></li>" 
+	});
+	
+	function saveOrder() {
+		var $this = $(this);
+		var data = $this.parent().children().map(function() {
+			return $this.attr("data-id");
+		}).get();
+	
+		var currentid = $this.attr("data-id"); 
+		var oldgroupid = $this.attr("data-groupid"); 
+		var groupid = $this.parent().attr("data-groupid"); 
+	
+		if (oldgroupid != groupid) {
+			var oldgroup = $("#" + oldgroupid);
+			var groupval = oldgroup.val().replace(currentid, "");
+			oldgroup.val(groupval);
+		}
+	
+		$("#" + groupid).val(data.join(",")); 
+		$this.attr("data-groupid", groupid); 
+	};
+
+</script> 
+</html>

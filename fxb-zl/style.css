@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+* {
+	font: 13px/1.5 '微软雅黑';
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: #FFFFFF;
+	background-size: cover;
+	
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	border: none;
+	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #B8B8B8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #B8B8B8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #B8B8B8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #B8B8B8;
+}
+.fl{
+	width: 350px;
+	height: 300px;
+	padding: 20px 50px 0 50px;
+	border: 1px solid #f5f5f5;
+	box-shadow: 0 0 100px #F5F5F5;
+}
+.logo{
+	width: 300px;
+	height: 300px;
+	margin: 165px auto;
+	margin-right: 100px;
+}
+.logo img{
+	margin-left: 95px;
+	margin-bottom: 24px;
+	margin-top: 70px;
+}
+.logo p {
+	font-size: 30px;
+	color: #313131;
+	text-align: center;
+}
+
+.login-main{
+	width: 510px;
+	height: 470px;
+	margin: 0px auto;
+	margin-left: 100px;
+	
+}
+.login_name p {
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	color: #474747;
+	padding: 10px 0 0;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.login_logo img {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.rem {
+	width: 100%;
+	text-align: right;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.rem label {
+	color: #a6a5a5;
+	font-size: 14px;
+}
+
+.rem input[type=checkbox] {
+	margin-right: 5px;
+	vertical-align:text-bottom;
+}
+
+#check:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: -6px;
+}
+
+
+
+input[type=text],
+input[type=file],
+input[type=password],
+input[type=email],
+select {
+	border: none;
+	border-bottom: 1px solid #CBCBCB;
+	vertical-align: middle;
+	height: 30px;
+	padding: 0px 16px;
+	outline: none;
+	width: 100%;
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #b8b8b8;
+	font-size: 16px;
+}
+
+input[type=submit],
+input[type=button] {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	font-size: 18px;
+	line-height: 34px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #7257b3;
+	border-radius: 40px;
+	border: none;
+	-webkit-appearance: none;
+	outline: none;
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+.copyright {
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 60px;
+}
+
+#password_text {
+	border: none;
+	border-bottom: 1px solid #CBCBCB;
+	vertical-align: middle;
+	border-radius: 3px;
+	height: 50px;
+	padding: 0px 16px;
+	font-size: 14px;
+	color: #b8b8b8;
+	outline: none;
+	width: 100%;
+	margin-bottom: 15px;
+	display: block;
+	line-height: 50px;
+	font-size: 17px;
+}
+
+.fr img{
+	margin-top: 170px;
+}
+
+.line{
+	width: 200px;
+	height: 150px;
+	border-right: 5px solid #def0fa;
+	margin-left: 110px;
+}
+
+/* 遮罩层 */
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50); 
+    opacity: 0.5; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.dv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 110;
+	
+}
+.dv .bg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: url(images/bg.png) no-repeat center center;
+	z-index: 120;
+
+}
+.dv .bg .lg{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -45px;
+	z-index: 120;
+}
+.dv .bg .num{
+	margin-top: 20px;
+	font-size: 30px;
+	margin-left: -45px;
+}	
+.progress{
+	height: 10px;
+	width: 370px;
+	background:rgb(238,238, 238);
+	overflow: visible;
+	border-radius: 20px;	
+	margin-top: 18px;
+	margin-left: 10px;
+}
+.progress .progress-bar{
+	border-radius: 20px;
+	position: relative;
+	animation: animate-positive 2s;
+}
+.progress .progress-value{
+	display: block;
+	font-size: 8px !important;
+	color: #7257b3;
+	border-radius: 4px;
+	position: absolute;
+	top: 8px;
+	right: -8px;
+}
+.progress-bar-danger{
+		background-color: #7257b3;
+}
+.progress-bar.active{
+	animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+}
+@-webkit-keyframes animate-positive{
+	0% { width: 0; }
+}
+@keyframes animate-positive{
+	0% { width: 0; }
+}
+.dv .bg .num_b{
+	text-align: center;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: 180px;
+}
+.progress img{
+	width: 18px;
+	display: block;
+	position: absolute;
+	right: -8px;
+}
